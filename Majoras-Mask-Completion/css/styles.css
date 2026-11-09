@@ -1,0 +1,252 @@
+/*
+.lora-<uniquifier> {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+body {
+  width: auto;
+  font-size: 20px;
+  line-height: 35px;
+  font-weight: 300;
+  color: #fff;
+  font-family: "Lora", sans-serif;
+  background-image: url("../img/bg2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+}
+
+header {
+  width: auto;
+  font-size: 30px;
+  padding: 0px 50px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header img {
+  width: 450px;
+  height: 200px;
+}
+
+h2 {
+  text-align: center;
+  color: #fff;
+}
+
+.triforce {
+  width: 30px;
+  align-self: center;
+  filter: invert(1);
+}
+
+.checks {
+  width: 80%;
+  margin: 25px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 60ch auto;
+  gap: 2rem;
+}
+.checks .checks section {
+  background-color: rgb(37, 37, 37);
+  border-style: groove;
+  border-color: #fff;
+}
+.checks label:hover {
+  color: gold;
+  cursor: pointer;
+}
+.checks ul {
+  list-style: none;
+  padding-left: 20px;
+  margin: 10;
+}
+.checks li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.checks input[type=checkbox] {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  background-color: transparent;
+  accent-color: gold;
+  cursor: pointer;
+  display: grid;
+  background: transparent;
+  place-content: center;
+  transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
+}
+.checks input[type=checkbox]::after {
+  content: "";
+  width: 14px;
+  height: 12px;
+  background-color: #fff;
+  clip-path: polygon(50% 0%, 75% 50%, 100% 100%, 0% 100%, 25% 50%);
+  transform: scale(0);
+  transition: transform 0.15s ease-in-out;
+}
+.checks input[type=checkbox]:checked::after {
+  transform: scale(1);
+}
+.checks input[type=checkbox]:checked + label {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  opacity: 0.5;
+  background: transparent;
+}
+.checks .transmasks {
+  background-color: rgb(37, 37, 37);
+  border-style: groove;
+  border-color: #fff;
+}
+.checks .remains {
+  background-color: rgb(37, 37, 37);
+  border-style: groove;
+  border-color: #fff;
+}
+.checks .masks {
+  background-color: rgb(37, 37, 37);
+  border-style: groove;
+  border-color: #fff;
+}
+.checks .woodfall {
+  background-color: rgb(37, 37, 37);
+  border-style: groove;
+  border-color: #fff;
+}
+.checks .snow {
+  background-color: rgb(37, 37, 37);
+  border-style: groove;
+  border-color: #fff;
+}
+.checks .bay {
+  background-color: rgb(37, 37, 37);
+  border-style: groove;
+  border-color: #fff;
+}
+.checks .stone {
+  background-color: rgb(37, 37, 37);
+  border-style: groove;
+  border-color: #fff;
+}
+.checks .swords {
+  background-color: rgb(37, 37, 37);
+  border-style: groove;
+  border-color: #fff;
+}
+.checks .shields {
+  background-color: rgb(37, 37, 37);
+  border-style: groove;
+  border-color: #fff;
+}
+.checks .quiver {
+  background-color: rgb(37, 37, 37);
+  border-style: groove;
+  border-color: #fff;
+}
+.checks .bombs {
+  background-color: rgb(37, 37, 37);
+  border-style: groove;
+  border-color: #fff;
+}
+.checks .wallets {
+  background-color: rgb(37, 37, 37);
+  border-style: groove;
+  border-color: #fff;
+}
+.checks .bottles {
+  background-color: rgb(37, 37, 37);
+  border-style: groove;
+  border-color: #fff;
+}
+.checks .songs {
+  background-color: rgb(37, 37, 37);
+  border-style: groove;
+  border-color: #fff;
+}
+.checks .fairies {
+  background-color: rgb(37, 37, 37);
+  border-style: groove;
+  border-color: #fff;
+}
+.checks .notebook {
+  background-color: rgb(37, 37, 37);
+  border-style: groove;
+  border-color: #fff;
+}
+.checks .statues {
+  background-color: rgb(37, 37, 37);
+  border-style: groove;
+  border-color: #fff;
+}
+.checks .equipment {
+  background-color: rgb(37, 37, 37);
+  border-style: groove;
+  border-color: #fff;
+}
+
+footer {
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  header {
+    padding: 10px 15px;
+    font-size: 20px;
+  }
+  header header img {
+    width: 160px;
+  }
+  body {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .titulo-completo h2 {
+    font-size: 24px;
+  }
+  .checks {
+    width: 95%;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 10px;
+  }
+  .triforce {
+    width: 18px;
+  }
+  li {
+    font-size: 15px;
+  }
+}
+/*
+.masks {
+  margin: 0 auto;
+  width: 10%;
+  padding: 20px;
+  background-color: rgb(44, 43, 43);
+
+}
+
+.remains {
+  margin: 0 auto;
+  width: 10%;
+  padding: 20px;
+  background-color: rgb(44, 43, 43);
+}
+*//*# sourceMappingURL=styles.css.map */

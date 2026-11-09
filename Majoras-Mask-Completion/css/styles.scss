@@ -1,0 +1,327 @@
+// <weight>: Use a value from 400 to 700
+// <uniquifier>: Use a unique and descriptive class name
+/*
+.lora-<uniquifier> {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+$primary-color: #6e52af;
+$white: #fff;
+$font-main: "Lora", sans-serif;
+$black: black;
+$gray: rgb(37, 37, 37);
+
+body {
+  width: auto;
+  font-size: 20px;
+  line-height: 35px;
+  font-weight: 300;
+  color: $white;
+  font-family: $font-main;
+  background-image: url("../img/bg2.png") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: $black;
+  
+
+}
+
+
+
+header {
+
+  width: auto;
+  font-size: 30px;
+  padding: 0px 50px;
+  
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+
+img {
+  width: 450px;
+  height: 200px;
+
+  
+}
+
+
+}
+
+h2{
+  text-align: center;
+  color:$white;
+
+ 
+}
+
+.triforce {
+  width: 30px;
+  align-self: center;
+  filter: invert(1);
+}
+
+
+.checks {
+  width: 80%;
+  margin: 25px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 60ch auto;
+  gap: 2rem;
+
+  .checks section {
+  background-color: $gray;
+  border-style: groove;
+  border-color: #fff;
+}
+
+  label:hover {
+    color:gold;
+    cursor: pointer;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 20px;
+    margin: 10;
+    
+  }
+
+   li {
+    display: flex;         // checkbox y texto alineados
+    align-items: center;
+    gap: 20px;
+    
+  }
+
+  input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    border: 2px solid $white;
+    border-radius: 4px;
+    background-color: transparent;
+    accent-color: gold;
+    cursor: pointer;
+    display: grid;
+    background: transparent;
+    place-content: center;
+    transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
+
+    &::after{
+      content:"";
+      width: 14px;
+      height: 12px;
+      background-color: $white;
+      clip-path: polygon(50% 0%, 75% 50%, 100% 100%, 0% 100%, 25% 50%);
+      transform: scale(0);
+      transition: transform 0.15s ease-in-out;
+    }
+
+    &:checked::after {
+    transform: scale(1);
+  }
+  }
+  
+   input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    opacity: 0.5;
+    background: transparent;
+    
+  }
+  
+
+  .transmasks {
+    background-color: $gray;
+    border-style:groove;
+    border-color: #fff;
+    
+  }
+
+  .remains {
+    background-color: $gray;
+    border-style:groove;
+    border-color: #fff;
+  
+  }
+  
+  .masks {
+     background-color: $gray;
+    border-style:groove;
+    border-color: #fff;
+  
+  }
+
+  .woodfall {
+    background-color: $gray;
+    border-style:groove;
+    border-color: #fff;
+  
+  }
+
+  .snow {
+    background-color: $gray;
+    border-style:groove;
+    border-color: #fff;
+  
+  }
+   .bay {
+    background-color: $gray;
+    border-style:groove;
+    border-color: #fff;
+  
+  }
+
+  .stone {
+    background-color: $gray;
+    border-style:groove;
+    border-color: #fff;
+  
+  }
+
+  .swords {
+    background-color: $gray;
+    border-style:groove;
+    border-color: #fff;
+  
+  }
+
+  .shields {
+    background-color: $gray;
+    border-style:groove;
+    border-color: #fff;
+  
+  }
+
+  .quiver {
+    background-color: $gray;
+    border-style:groove;
+    border-color: #fff;
+  
+  }
+
+  .bombs {
+    background-color: $gray;
+    border-style:groove;
+    border-color: #fff;
+  
+  }
+
+  .wallets {
+    background-color: $gray;
+    border-style:groove;
+    border-color: #fff;
+  
+  }
+
+  .bottles {
+    background-color: $gray;
+    border-style:groove;
+    border-color: #fff;
+  
+  }
+  .songs {
+    background-color: $gray;
+    border-style:groove;
+    border-color: #fff;
+  
+  }
+  .fairies {
+    background-color: $gray;
+    border-style:groove;
+    border-color: #fff;
+  
+  }
+  .notebook {
+    background-color: $gray;
+    border-style:groove;
+    border-color: #fff;
+  
+  }
+
+  .statues {
+    background-color: $gray;
+    border-style:groove;
+    border-color: #fff;
+  
+  }
+
+  .equipment {
+    background-color: $gray;
+    border-style:groove;
+    border-color: #fff;
+  
+  }
+}
+
+footer {
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  header {
+    padding: 10px 15px;
+    font-size: 20px;
+
+    header img {
+      width: 160px;
+    }
+  }
+
+  body {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .titulo-completo h2 {
+    font-size: 24px;
+  }
+
+  .checks {
+    width: 95%;
+    grid-template-columns: 1fr;   // una sola columna
+    gap: 1rem;
+    padding: 10px;
+  }
+
+  .triforce {
+    width: 18px;
+  }
+
+  li {
+    font-size: 15px;
+  }
+}
+
+/*
+.masks {
+  margin: 0 auto;
+  width: 10%;
+  padding: 20px;
+  background-color: rgb(44, 43, 43);
+  
+}
+
+.remains {
+  margin: 0 auto;
+  width: 10%;
+  padding: 20px;
+  background-color: rgb(44, 43, 43);
+}
+*/
